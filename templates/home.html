@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<style>
+  #intro {
+    background-image: url(https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=856&q=80);
+    height: 100vh;
+  }
+
+  /* Height for devices larger than 576px */
+  @media (min-width: 992px) {
+    #intro {
+      margin-top: -58.59px;
+    }
+  }
+
+  .navbar .nav-link {
+    color: #fff !important;
+  }
+</style>
+
+
+
+ <!-- Background image -->
+ <div id="intro" class="bg-image shadow-2-strong">
+  <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.8);">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+        
+          <div class="container my-4">
+  
+            <h1 class="display-6 text-light">We're Glad To Recommend You Movies</h1>
+            <form action="{{url_for('recommend')}}">
+              <div class="mb-3">
+                <label for="movie" class="form-label text-light">Enter Movie Name</label>
+                <input type="text" autocomplete="on" name="movie" class="form-control" placeholder="Enter Movie name or copy-paste from #About section">
+                <br>
+                <input type="submit" class="btn btn-outline-info" value="Recommend">
+              </div>
+              
+            </form>
+          
+          
+          
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Background image -->
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white bg-dark"
+          
+          >
+    <!-- Grid container -->
+    <div class="container-fluid p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              The Movie Recommendation System
+            </h6>
+            <p>
+              This Content Based Filtering Movie Recommender is built on a flask app using Python programming language. I used the package “scikit-learn”, "pandas", "Numpy" and there I'll be using "Cosine-Similarity", "Vectorization" . Here, feature extraction methods and distance metrics are utilised to generate recommendations.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Tech Stacks Used</h6>
+            <p>
+              <a class="text-white">Python</a>
+            </p>
+            <p>
+              <a class="text-white">Flask</a>
+            </p>
+            <p>
+              <a class="text-white">HTML</a>
+            </p>
+            <p>
+              <a class="text-white">Bootstrap</a>
+            </p>
+            <br><br><br><br>
+            <a class="text-white">Made with ❤️ by Deep Narayan Bhagat</a>
+          </p>
+          </div>
+        
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+         
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> West Bengal, Kolkata 500152, IN</p>
+            <p><i class="fas fa-envelope mr-3"></i> deepak2014bhagat.db@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="container-fluid text-left mx-lg-5">
+              © 2020 Copyright: deepak2014bhagat.db@gmail.com
+             
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+          
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- LinkedIn -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               href="https://www.linkedin.com/in/deep-narayan-bhagat-433162141/"
+               ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              
+            <!-- Twitter -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               href="https://twitter.com/me_deep_bhagat"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Github -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               href="https://github.com/deepakbhagat7"
+               ><i class="fa-brands fa-github-square"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               href="https://www.instagram.com/deepak.bhagat_7"
+               ><i class="fab fa-instagram"></i
+              ></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+
+{% endblock %}
+
+
