@@ -30,3 +30,7 @@ Credits Dataset - https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?selec
 2. Go to that venv, you can use this command (./env/Scripts/Activate.ps1)
 3. Install the requirement.txt file (pip install requirements.txt)
 4. Run the flask app (Python .\app.py)
+
+
+
+I had deployed once to test my backend =-- https://ms-algo-deep.herokuapp.com (this is not the full app it was only for testing backend)
