@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import ast
 import requests
 
- #importing movies's dataset as well as credits dataset
+#importing movies's dataset as well as credits dataset
 credits=pd.read_csv('tmdb_5000_credits.csv')
 movies=pd.read_csv('tmdb_5000_movies.csv')
 # merging both in single dataframe with specific columns
